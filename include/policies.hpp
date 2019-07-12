@@ -6,6 +6,7 @@
 //=======================================================================
 
 #include <boost/intrusive/list.hpp>
+#include "List.h"
 
 // create policies
 
@@ -360,13 +361,6 @@ struct Sort {
 template<class T>
 struct Sort<std::list<T> > {
     inline static void run(std::list<T> &c, std::size_t){
-        c.sort();
-    }
-};
-
-template<class T>
-struct Sort<plf::colony<T> > {
-    inline static void run(plf::colony<T> &c, std::size_t){
         c.sort();
     }
 };
