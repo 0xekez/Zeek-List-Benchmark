@@ -1,5 +1,9 @@
 From : https://github.com/wichtounet/articles
 
+you might have to run::
+
+    mkdir -p release/src/vector_list_update_1
+
 articles
 ========
 
